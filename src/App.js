@@ -3,12 +3,10 @@ import Posts from './Posts.js';
 
 import './App.css';
 
-const  App = () => {
-  return (
+const  App = () =>
     <div className="App">
-      {Posts.map((post, index) => <Post {...post} key={index}/>)}
+      {Posts ? Posts.map((post, index) => <Post {...post} key={index}/>) : null}
     </div>
-  );
-}
+
 
 export default App;

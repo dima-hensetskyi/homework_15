@@ -1,8 +1,7 @@
 import React from 'react';
 
 
-const Post = ({author, date, content, image}) => {
-    return (
+const Post = ({author, date, content, image}) =>
         <div className="post">
             <div className="author">
                 <img src={author.photo} alt="author" />
@@ -18,6 +17,5 @@ const Post = ({author, date, content, image}) => {
                 <i id="like" className="far fa-heart"></i>
             </div>
         </div>
-    )
-}
+
 export default Post;
